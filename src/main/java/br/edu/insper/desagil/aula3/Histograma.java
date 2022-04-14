@@ -7,9 +7,15 @@ public class Histograma {
 
 	public List<Integer> calcula(List<Integer> numeros) {
 		List<Integer> l = new ArrayList<>();
-
-		// seu código aqui
-
+		for (int indice = 0; indice < 10; indice++) {
+			int quantidade = 0;
+			for (Integer numero: numeros) {
+				if (numero == indice) {
+					quantidade ++;
+				}
+			}
+			l.add(quantidade);
+		}
 		return l;
 	}
 

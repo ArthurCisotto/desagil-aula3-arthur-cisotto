@@ -9,7 +9,14 @@ public class Contador {
 		Map<Character, Integer> d = new HashMap<>();
 
 		// seu código aqui
-
+		for (int i = 0; i < palavra.length(); i++) {
+		    char c = palavra.charAt(i);
+		    if (!d.containsKey(c)) {
+		    	d.put(c, 1);
+		    }else {
+		    	d.put(c, d.get(c)+1);
+		    }
+		}
 		return d;
 	}
 
